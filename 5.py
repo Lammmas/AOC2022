@@ -33,7 +33,6 @@ for move in movelist:
         toCol = move[2] - 1
         crate = columns[fromCol].pop() # Get the latest crate in that column & remove it from that column
         columns[toCol].append(crate) # Set the new crate through move -> col and counter -> cell
-    # print("\033[A\033[A\033[A\033[A\033[A\033[A\033[A\033[A\033[A\033[A\033[A\033[A")
 
 answer1 = ""
 for col in columns:
